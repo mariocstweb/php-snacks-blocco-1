@@ -22,3 +22,21 @@ $matchs = [
 ];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <?php foreach ($matchs as $key => $match) : ?>
+    <li>
+    <?= $match['casa'] ?> - <?= $match['ospite'] ?> | <?= $match['punti_casa'] ?> - <?= $match['punti_ospite'] ?>
+    <?php endforeach; ?>
+    </li>
+  </ul>
+</body>
+</html>
