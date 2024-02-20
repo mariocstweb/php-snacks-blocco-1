@@ -32,10 +32,10 @@ $matchs = [
 </head>
 <body>
   <ul>
-    <?php foreach ($matchs as $key => $match) : ?>
+    <?php foreach ($matchs as $match) : ?>
     <li>
     <?= $match['casa'] ?> - <?= $match['ospite'] ?> | <?= $match['punti_casa'] ?> - <?= $match['punti_ospite'] ?>
-    <?php endforeach; ?>
+    <?php endforeach ?>
     </li>
   </ul>
 </body>
